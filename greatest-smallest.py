@@ -1,9 +1,12 @@
-## This program reads input from user. If input is "done", then end the program and print the min and max numbers entered
-## If the input is a number, store the integer as largest variable and smallest variable and repromput user. Continue to
-## prompt user for input and evaluate what largest and smallest variables were, until "done" is entered. Add an exception
-## that says if the input is not an integer, and the input is not equal to "done", throw exeption error and reprompt for input.
-## Author: BWS
-## 9-23-17
+#####################################
+## Author: Brian Sudol
+## Date: 9-23-17
+## Purpose:
+##  This program reads input from user. If input is "done", then end the program and print the min and max numbers entered
+##  If the input is a number, store the integer as largest variable and smallest variable and repromput user. Continue to
+##  prompt user for input and evaluate what largest and smallest variables were, until "done" is entered. Add an exception
+##  that says if the input is not an integer, and the input is not equal to "done", throw exeption error and reprompt for input.
+#####################################
 largest = None
 smallest = None
 while True:
@@ -25,6 +28,6 @@ while True:
             if num <= smallest:
                 smallest = num
     if num =="done":
-        print("Maximum is", largest)
-        print("Minimum is", smallest)
+        print("Largest Number input is", largest)
+        print("Smallest Number input is", smallest)
         break
